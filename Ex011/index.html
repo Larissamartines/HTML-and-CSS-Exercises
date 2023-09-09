@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png"> <!--Minha imagem tem o tamanho maximo de 1000, a media de 700 e a menor de 300. Entao coloco uma folga de 50, que diz respeito a bala de rolagem-->
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexivel">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+
+    <audio src="midia/Sailing - Telecasted.mp3" controls autoplay loop></audio>
+    <source src="midia/Sailing - Telecasted.mp3" type="audio/mpeg">
+    <source src="midia/Sailing - Telecasted.mp3" type="audio/ogg">
+    <source src="midia/Sailing - Telecasted.mp3" type="audio/wav">
+
+    <p>Infelizmente seu navegador nao consegue carregar audio. <a href="midia/Sailing - Telecasted.mp3">Click aqui para baixar o arquivo MP3</a></p>
+</body>
+</html>
